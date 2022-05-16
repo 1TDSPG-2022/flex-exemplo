@@ -1,0 +1,16 @@
+/* O DISPLAY DO BOX PAI PARA FLEX */
+.box-pai{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.box{
+    /* width: 10%;
+    min-width: 200px;
+    height: 200px; */
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+}
