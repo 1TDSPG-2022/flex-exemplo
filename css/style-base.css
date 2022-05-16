@@ -18,6 +18,20 @@ h1,h2,h3{
 }
 
 nav a{
-    display: block;
     margin: 5% 0;
+}
+
+.active{
+    background-color: rgb(0, 0, 255);
+    color: #ffffff;
+    width: 20%;
+}
+
+.box-pai{
+    width: 99%;
+    height: 1040px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #c5abab;
+    border: 1px solid #cccccc;
 }
