@@ -7,19 +7,16 @@
     box-sizing: border-box;
 }
 /* reset */
-
+ 
 body{
     font-family: 'Lato', sans-serif;
     font-size: 16px;
 }
 
-h1,h2,h3{
+h2,h3{
     margin: 20px 10px;
 }
 
-nav a{
-    margin: 5% 0;
-}
 
 .active{
     background-color: rgb(0, 0, 255);
@@ -35,3 +32,80 @@ nav a{
     background-color: #c5abab;
     border: 1px solid #cccccc;
 }
+
+
+/* ESTILIZANDO O MENU COM FLEX-BOX */
+/* declarar o container flex*/
+/* Colocar cor de fundo como #1d1220*/
+/* determinar a direção de linha  para os itens do container*/
+/* determinar o alinhamento do conteúdo um de cada lado*/
+/* determinar a cor do texto em #fff*/
+
+
+.cabecalho {
+    display: flex;
+    background-color: #1d1220;
+    flex-direction: row; 
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    
+}
+
+/* determinar o container flex para o menu*/
+/* determine uma propriedade que avise ao container que quando o contéudo chegar ao final da linha ela quebre!*/
+
+.menu {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* selecione apenas os elementos > a filhos diretos de menu*/
+/* tirar a decaraçao de texto dos elementos a*/
+/* adicionar a cor de texto #fff aos elementos a*/
+/* adicionar margem esquerda de 20px aos elementos a*/
+/* adicionar espaçamento interno de 10px aos elementos a*/
+
+
+.menu > a {
+    text-decoration: none;
+    color: #fff;
+    padding: 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.menu > a:hover {
+    background-color: blueviolet;
+}
+/* ESTILIZANDO O MENU COM FLEX-BOX */
+
+
+/* CRIAR UMA GALERIA DE IMAGENS COM FLEXBOX */
+.lobos{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto 0 auto;
+    max-width: 50rem; 
+    /* max-width: 800px; */
+}
+
+.lobos > div {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 12.5rem; /* flex-basis : 200px; */
+    margin: 10px;
+}
+
+.lobos > div > figure > img{
+    max-width:100%;
+    display: block;
+
+}
+.bonitao{
+    margin-top: 12.5rem; /* margin-top : 200px; */
+    text-align: center;
+}
+
+/* CRIAR UMA GALERIA DE IMAGENS COM FLEX BOX */
